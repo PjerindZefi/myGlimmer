@@ -14,9 +14,36 @@
 
     {{content-for "head-footer"}}
   </head>
+
   <body>
     {{content-for "body"}}
 
+
+
+<!-- {{!-- <WelcomePage /> --}} -->
+
+
+
+    <body>
+
+    <input type="button" value="Now" onclick="currentDateTime()"/>
+
+    &nbsp;&nbsp;
+
+    <input type="button" value="Yesterday" onclick="yesterdayDateTime()"/>
+
+    &nbsp;&nbsp;
+
+    <input type="button" value="10 years ago" onclick="tenYearsDateTime()"/>
+
+    &nbsp;&nbsp;
+
+    <input type="button" value="one week from today" onclick="oneWeekDateTime()"/>
+
+
+
+
+{{outlet}}
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/my-glimmer.js"></script>
 
